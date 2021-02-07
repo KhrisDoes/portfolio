@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 // import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import Vid from '../videos/hampathgame.mp4';
+import Vid from '../videos/dodge_the_spam.mp4';
 import Link from '@material-ui/core/Link';
 
 
@@ -48,19 +48,19 @@ export default function SimpleCardTwo() {
                     Word of the Day
                 </Typography> */}
                 <Typography variant="h5" component="h2">
-                    HamPathGame
+                    DodgeTheSpam
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    <Link rel="noopener noreferrer" href="https://github.com/KhrisDoes/HamPathGame" target="_blank">
+                    <Link rel="noopener noreferrer" href="https://github.com/KhrisDoes/Dodge-The-Spam" target="_blank">
                         GitHub Repository
-                    </Link>
+                 </Link>
                 </Typography>
                 <CardMedia src={Vid} component="video" title="Some title" autoPlay controls loop
                     className={classes.media}
                 />
                 <Typography variant="body2" component="p">
-                    - Graphical User Interface using Java Swing<br />
-                    - Visualisation of the hamiltonian path NP-complete problem
+                    - Graphical User Interface using Python Pygame<br />
+                    - 2D game intended to be tested by a Reinforcement Learning algorithm
                 </Typography>
             </CardContent>
             {/* <CardActions>
