@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 // import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-
+import Logo from '../images/thg.png';
 import './Card.css';
 
 const useStyles = makeStyles({
@@ -26,8 +26,13 @@ const useStyles = makeStyles({
         marginBottom: 12,
     },
     media: {
-        height: 0,
-        // paddingTop: '56.25%', // 16:9
+        width: 75,
+        height: 75,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        // height: 0,
+        // paddingTop: '1em', // 16:9
+        paddingBottom: '1em'
     },
 });
 
@@ -45,12 +50,11 @@ export default function SimpleCard() {
                     Graduate Software Engineer
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    Writes software using a programming language
+                    {/* Writes software using a programming language */}
+                    The Hut Group
                 </Typography>
-                <CardMedia
+                <CardMedia src={Logo} component="img" title="Some title"
                     className={classes.media}
-                    image="../thg.png"
-                    title="Paella dish"
                 />
                 <Typography variant="body2" component="p">
                     September 2020 - Present
