@@ -5,8 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import ButtonAppBar from "./components/ButtonAppBar";
 
