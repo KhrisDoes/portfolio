@@ -6,8 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 // import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import Logo from '../images/thg.png';
-import './Card.css';
+import Vid from '../videos/hampathgame.mp4';
+import Link from '@material-ui/core/Link';
+
 
 const useStyles = makeStyles({
     root: {
@@ -26,33 +27,40 @@ const useStyles = makeStyles({
         marginBottom: 12,
     },
     media: {
-        width: 75,
-        height: 75,
+        width: 250,
+        height: 250,
         marginLeft: 'auto',
         marginRight: 'auto',
+        // height: 0,
+        // paddingTop: '1em', // 16:9
         paddingBottom: '1em'
     },
 });
 
-export default function SimpleCard() {
+export default function SimpleCardTwo() {
     const classes = useStyles();
-    // const bull = <span className={classes.bullet}>•</span>;
+    const preventDefault = (event) => event.preventDefault();
 
     return (
-        <Card className={classes.root} variant="outlined" >
-            <CardContent >
-                <Typography variant="h5" component="h2" >
-                    Graduate Software Engineer
+        <Card className={classes.root} variant="outlined">
+            <CardContent>
+                {/* <Typography className={classes.title} color="textSecondary" gutterBottom>
+                    Word of the Day
+                </Typography> */}
+                <Typography variant="h5" component="h2">
+                    HamPathGame
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    {/* Writes software using a programming language */}
-                    The Hut Group
+                    <Link href="#" onClick={preventDefault}>
+                        GitHub Repository
+                 </Link>
                 </Typography>
-                <CardMedia src={Logo} component="img" title="Some title"
+                <CardMedia src={Vid} component="video" title="Some title" autoPlay controls loop
                     className={classes.media}
                 />
                 <Typography variant="body2" component="p">
-                    September 2020 - Present
+                    - Graphical User Interface using Java Swing<br />
+                    - Visualisation of the hamiltonian path NP-complete problem
                 </Typography>
             </CardContent>
             {/* <CardActions>
