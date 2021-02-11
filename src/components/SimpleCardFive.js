@@ -4,7 +4,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from '@material-ui/core/CardMedia';
-import Logo from '../images/soton.png';
+import Logo from '../images/delta_v.png';
+import './Card.css';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles({
@@ -24,7 +25,7 @@ const useStyles = makeStyles({
         marginBottom: 12,
     },
     media: {
-        width: 230,
+        width: 516,
         height: 75,
         marginLeft: 'auto',
         marginRight: 'auto',
@@ -32,28 +33,25 @@ const useStyles = makeStyles({
     },
 });
 
-export default function SimpleCardTwo() {
+export default function SimpleCardFive() {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root} variant="outlined">
-            <CardContent>
-                {/* <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Word of the Day
-                </Typography> */}
-                <Typography variant="h5" component="h2">
-                    BSc Computer Science
+        <Card className={classes.root} variant="outlined" >
+            <CardContent >
+                <Typography variant="h5" component="h2" >
+                    Software Developer
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    {/* The study of computation */}
-                    University of Southampton
+                    {/* Writes software using a programming language */}
+                    DeltaV Technologies
                 </Typography>
-                <Link rel="noopener" href="https://www.southampton.ac.uk" target="_blank">
+                <Link rel="noopener" href="https://www.deltav-tech.co.uk" target="_blank">
                     <CardMedia src={Logo} component="img" title="Some title"
                         className={classes.media} />
                 </Link>
                 <Typography variant="body2" component="p">
-                    September 2017 - September 2020
+                    June 2019 - September 2019
                 </Typography>
             </CardContent>
             {/* <CardActions>

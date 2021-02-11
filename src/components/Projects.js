@@ -5,7 +5,8 @@ import SimpleCardFour from "./SimpleCardFour";
 
 export default function Projects() {
     return (
-        <>
+        <Grid container xs={12} spacing={10}>
+            <Grid item xs={12}> </Grid>
             <Grid item xs={3} >
             </Grid >
             <Grid item xs={6} >
@@ -21,6 +22,6 @@ export default function Projects() {
             </Grid>
             <Grid item xs={3}>
             </Grid>
-        </>
+        </Grid>
     );
 }

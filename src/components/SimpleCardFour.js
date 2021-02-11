@@ -51,7 +51,7 @@ export default function SimpleCardTwo() {
                     DodgeTheSpam
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    <Link rel="noopener noreferrer" href="https://github.com/KhrisDoes/Dodge-The-Spam" target="_blank">
+                    <Link rel="noopener" href="https://github.com/KhrisDoes/Dodge-The-Spam" target="_blank">
                         GitHub Repository
                  </Link>
                 </Typography>

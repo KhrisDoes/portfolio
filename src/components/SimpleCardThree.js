@@ -51,7 +51,7 @@ export default function SimpleCardTwo() {
                     HamPathGame
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    <Link rel="noopener noreferrer" href="https://github.com/KhrisDoes/HamPathGame" target="_blank">
+                    <Link rel="noopener" href="https://github.com/KhrisDoes/HamPathGame" target="_blank">
                         GitHub Repository
                     </Link>
                 </Typography>
