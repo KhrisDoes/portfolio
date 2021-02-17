@@ -45,11 +45,10 @@ export default function SimpleCardTwo() {
                     BSc Computer Science
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    {/* The study of computation */}
                     University of Southampton
                 </Typography>
                 <Link rel="noopener" href="https://www.southampton.ac.uk" target="_blank">
-                    <CardMedia src={Logo} component="img" title="Some title"
+                    <CardMedia src={Logo} component="img" title="Higher education"
                         className={classes.media} />
                 </Link>
                 <Typography variant="body2" component="p">

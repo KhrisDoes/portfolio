@@ -43,11 +43,10 @@ export default function SimpleCardFive() {
                     Software Developer
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    {/* Writes software using a programming language */}
                     DeltaV Technologies
                 </Typography>
                 <Link rel="noopener" href="https://www.deltav-tech.co.uk" target="_blank">
-                    <CardMedia src={Logo} component="img" title="Some title"
+                    <CardMedia src={Logo} component="img" title="Past summer work"
                         className={classes.media} />
                 </Link>
                 <Typography variant="body2" component="p">

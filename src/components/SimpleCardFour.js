@@ -39,7 +39,6 @@ const useStyles = makeStyles({
 
 export default function SimpleCardTwo() {
     const classes = useStyles();
-    const preventDefault = (event) => event.preventDefault();
 
     return (
         <Card className={classes.root} variant="outlined">
@@ -55,7 +54,7 @@ export default function SimpleCardTwo() {
                         GitHub Repository
                  </Link>
                 </Typography>
-                <CardMedia src={Vid} component="video" title="Some title" autoPlay controls loop
+                <CardMedia src={Vid} component="video" autoPlay controls loop
                     className={classes.media}
                 />
                 <Typography variant="body2" component="p">

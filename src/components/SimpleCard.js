@@ -43,11 +43,10 @@ export default function SimpleCard() {
                     Graduate Software Engineer
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
-                    {/* Writes software using a programming language */}
                     The Hut Group
                 </Typography>
                 <Link rel="noopener" href="https://www.thg.com" target="_blank">
-                    <CardMedia src={Logo} component="img" title="Some title"
+                    <CardMedia src={Logo} component="img" title="Current employment"
                         className={classes.media} />
                 </Link>
                 <Typography variant="body2" component="p">
