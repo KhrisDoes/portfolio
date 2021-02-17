@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom'
 export default function ButtonAppBar() {
     return (
         <div>
-            <AppBar position="static" style={{ backgroundColor: 'black' }}>
+            <AppBar position="static" style={{ backgroundColor: 'grey' }}>
                 <Toolbar>
-                    <Button component={Link} to="/" color="inherit">Christos Ioannou</Button>
-                    <Button component={Link} to="/projects" style={{ marginLeft: "auto" }} color="inherit">Projects</Button>
+                    <Button component={Link} to="/" color="inherit" size="large">Christos Ioannou</Button>
+                    <Button component={Link} to="/projects" style={{ marginLeft: "auto" }} color="inherit" size="large">Projects</Button>
                 </Toolbar>
             </AppBar>
         </div>
